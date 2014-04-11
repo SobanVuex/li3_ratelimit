@@ -44,7 +44,7 @@ use lithium\storage\Cache;
 Cache::config(array(
     // other cache configurations
     'rate_limit' => array(
-        'adapter' => 'File' // Or any other cache configuration.
+        'adapter' => 'File' // Or any other cache adapter.
         // There is no need for strategy as this cache will store only integers
     )
 ));

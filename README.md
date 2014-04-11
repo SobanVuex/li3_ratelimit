@@ -32,10 +32,30 @@ Manually adding the requirements to `composer.json`:
 Usage
 -----
 
+Add a cache configuration for the rate limit counters
+
+```php
+<?php
+
+// app/bootstrap/cache.php
+
+use lithium\storage\Cache;
+
+Cache::config(array(
+    // other cache configurations
+    'rate_limit' => array(
+        'adapter' => 'File' // Or any other cache configuration.
+        // There is no need for strategy as this cache will store only integers
+    )
+));
+```
+
 To add it to your lithium controller add it as a trait
 
 ```php
 <?php
+
+// app/controllers/MyController.php
 
 namespace app\controllers;
 
@@ -54,6 +74,8 @@ To rate limit an action
 
 ```php
 <?php
+
+// app/controllers/MyController.php
 
 namespace app\controllers;
 

@@ -86,7 +86,7 @@ class RateLimiter extends \lithium\core\StaticObject
      * Write to log
      *
      * @param  string $key
-     * @param  type $options
+     * @param  array $options
      * @return boolean
      */
     protected static function log($key, $options)

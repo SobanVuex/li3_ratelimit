@@ -1,0 +1,24 @@
+{
+    "name": "sobanvuex/li3_ratelimit",
+    "description": "Lithium plugin for rate limiting requests",
+    "keywords": ["li3", "lithium", "ratelimit"],
+    "type": "lithium-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Soban",
+            "email": "me@soban.co",
+            "homepage": "https://soban.co"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "*"
+    },
+    "require-dev": {
+        "unionofrad/lithium": "dev-master"
+    },
+    "suggest": {
+        "unionofrad/lithium": "Lithium is required for this plugin."
+    }
+}
